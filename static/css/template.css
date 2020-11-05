@@ -1,0 +1,128 @@
+
+
+body {
+    background-image: url(../img/bg.jpg);
+    color:black;
+    font: italic normal 1.4em georgia, sans-serif;
+    text-align: center;
+    
+  }
+
+  ul.menu {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+
+  .title-box {
+    display: inline-block;
+    justify-content: center;
+    max-width: 20em;
+    padding: 2em 0.5em;
+    margin: 1rem 0 0 1rem;
+  
+    color: #fff;
+    background-color: grey;
+    border: solid 2px #fff;
+
+  }
+ 
+  .break {
+    display: block;
+    opacity: 0;
+  }
+  
+
+  #outer-dropzone {
+    height: 140px;
+  }
+  
+  #inner-dropzone {
+    height: 400px;
+  }
+  
+  .dropzone {
+    background-color: #bfe4ff;
+    border: dashed 4px transparent;
+    border-radius: 4px;
+    margin: 10px ;
+    padding: 10px;
+    width: 150%;
+    transition: background-color 0.3s;
+  }
+  
+  .drop-active {
+    border-color: black;
+  }
+  
+  .drop-target.low-risk {
+    background-color: rgb(89, 218, 4);
+    border-color: #fff;
+    border-style: solid;
+  }
+
+  .drop-target.medium-risk {
+    background-color: rgb(255, 123, 0);
+    border-color: #fff;
+    border-style: solid;
+  }
+
+  .drop-target.high-risk {
+    background-color: rgb(255, 0, 0);
+    border-color: #fff;
+    border-style: solid;
+  }
+
+  
+  
+  .drag-drop {
+    top: 2.5em;
+    border-radius: 50%;
+    display: inline-block;
+    height: 7.5em;
+    width: 7.5em;
+    line-height: 7.5em;
+    
+    
+    position: relative;
+    color: #fff;
+    background-color: #29e;
+    border: solid 2px black;
+    
+    touch-action: none;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  
+    transition: background-color 0.3s;
+  }
+
+
+  
+  .drag-drop.can-drop {
+    color: #000;
+    background-color: lightblue;
+  }
+  .low-risk {
+    color: #000;
+    background-color:lightgreen;
+  }
+  .medium-risk {
+    color: #000;
+    background-color:orange;
+  }
+  .high-risk {
+    color: #000;
+    background-color:orangered;
+  }
+
+  .buckets {
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 7em;
+    align-items: center;
+    justify-items: center;
+    padding: 5em;
+    padding-left: 20em;
+    padding-right: 20em;
+  }
