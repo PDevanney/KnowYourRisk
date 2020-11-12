@@ -1,0 +1,6 @@
+Flask==1.1.2
+gunicorn==20.0.4
+heroku==0.1.4
+pylint==2.6.0
+pylint-flask==0.6
+

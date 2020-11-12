@@ -51,6 +51,14 @@ body {
     transition: background-color 0.3s;
   }
   
+  .line-dropzone {
+    background-color: #bfe4ff;
+    border: dashed 4px transparent;
+    border-radius: 4px;
+    width: 150%;
+    transition: background-color 0.3s;
+  }
+
   .drop-active {
     border-color: black;
   }
@@ -126,3 +134,16 @@ body {
     padding-left: 20em;
     padding-right: 20em;
   }
+
+  #xline {
+    color: black;
+    position: relative;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    margin: 0;
+    height: 0.05em;
+    background-color: black;
+    border-color: black;
+}
+
