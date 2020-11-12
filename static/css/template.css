@@ -2,6 +2,7 @@
 
 body {
     background-image: url(../img/bg.jpg);
+    background-size: cover;
     color:black;
     font: italic normal 1.4em georgia, sans-serif;
     text-align: center;
@@ -38,17 +39,23 @@ body {
   }
   
   #inner-dropzone {
-    height: 400px;
+    height: 100px;
+  }
+
+  .drop-height {
+    height: 40%
   }
   
   .dropzone {
     background-color: #bfe4ff;
     border: dashed 4px transparent;
     border-radius: 4px;
-    margin: 10px ;
+    height: 500px;
+    margin: auto ;
     padding: 10px;
-    width: 150%;
+    width: 100%;
     transition: background-color 0.3s;
+    display: inline-block;
   }
   
   .dropzone.line {
@@ -141,15 +148,17 @@ body {
   }
 
   #xline {
-    color: black;
+    
     position: relative;
     left: 0;
     top: 70%;
     width: 100%;
     margin: 0;
-    height: 0.05em;
+    height: 0.1em;
     background-color: black;
     border-color: black;
+    margin-top: 22.5%;
+    background: linear-gradient(to right, green, red);
 }
 
 .xtag {
@@ -159,5 +168,13 @@ body {
 .xtag > * {
   display: inline-block;
   width: 200px;
+}
+
+.top-buffer { 
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  width: 80%;
 }
 

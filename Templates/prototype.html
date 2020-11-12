@@ -9,33 +9,62 @@
   <body>
     {% extends "template.html" %}
     {% block content %}
-    <div class="title-box">
-      <h1> How Risky are these Activities? </h1>
+
+    <div class="jumbotron text-center">
+      <h1>How Risky are these Activities?</h1>
+      <p>Hover over each one blah blah blah</p>
     </div>
     
-    <div class="break"></div>
-
-    <div>
-      <div id="yes-drop" class="drag-drop gym"> Gym</div>
-      <div id="yes-drop" class="drag-drop walk"> Walk</div>
-      <div id="yes-drop" class="drag-drop church"> Church</div>
-      <div id="yes-drop" class="drag-drop visit"> Visit</div>
-      
-      <div style="margin-bottom: 5%;"></div>
-
-      <div id="inner-dropzone" class="dropzone line">
-        <p>Risk Scale</p>
-        <hr id="xline">
-
-        <div class="xtag" style="text-align: center;">
-          <p style="bottom: 0%; width: 500px;">Low Risk</p>          
-          <p style="width: 500px;">High Risk</p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="yes-drop" class="drag-drop gym"> Gym</div>
         </div>
-
-      </div>
+        <div class="col">
+          <div id="yes-drop" class="drag-drop walk"> Walk</div>
+        </div>
+        <div class="col">
+          <div id="yes-drop" class="drag-drop church"> Church</div>
+        </div>
+        <div class="col">
+          <div id="yes-drop" class="drag-drop visit"> Visit</div>
+        </div>
+      </div>  
     </div>
-
-           
+    <div class="top-buffer">
+      <div class="dropzone">
+        <div class ="row">
+          <div class="col">
+            <h3>Risk scale</h3>
+          </div>
+        </div>
+      <div class="row">
+        <hr id="xline">
+      </div>
+        <div class="row">
+          <div class="col-sm-1">
+            Low Risk
+          </div>
+          <div class="col-sm-12">
+            High Risk
+          </div>
+        </div>
+      </div>
+      
+         
+      </div>
     {% endblock %}
   </body>
 </html>
+
+<!--
+  <div class="dropzone line">
+          <p>Risk Scale</p>
+          <hr id="xline">
+            
+          <div class="xtag" style="text-align: center;">
+            <p>Low Risk</p>          
+            <p>High Risk</p>
+          </div>
+        </div>
+-->

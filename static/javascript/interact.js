@@ -10,7 +10,6 @@ interact('.draggable')
     // keep the element within the area of it's parent
     modifiers: [
       interact.modifiers.restrictRect({
-        restriction: 'parent',
         endOnly: true
       })
     ],
@@ -90,7 +89,6 @@ interact('.dropzone').dropzone({
       inertia: true,
       modifiers: [
         interact.modifiers.restrictRect({
-          restriction: 'parent',
           endOnly: true
         })
       ],
