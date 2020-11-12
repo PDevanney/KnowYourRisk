@@ -77,6 +77,12 @@ body {
     border-style: solid;
   }
 
+  .drop-target.line {
+    background-color: lightblue;
+    border-color: #fff;
+    border-style: solid;
+  }
+
   
   
   .drag-drop {
