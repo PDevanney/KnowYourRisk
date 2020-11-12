@@ -118,6 +118,9 @@ body {
   .drag-drop.can-drop {
     color: #000;
     background-color: lightblue;
+    height: 3.75em;
+    width: 3.75em;
+    line-height: 3.25em;
   }
   .low-risk {
     color: #000;
