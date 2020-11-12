@@ -55,7 +55,7 @@ body {
     background-color: #bfe4ff;
     border: dashed 4px transparent;
     border-radius: 4px;
-    width: 150%;
+    width: 100%;
     transition: background-color 0.3s;
   }
 
@@ -130,9 +130,12 @@ body {
     gap: 7em;
     align-items: center;
     justify-items: center;
+
+    /*
     padding: 5em;
     padding-left: 20em;
     padding-right: 20em;
+    */
   }
 
   #xline {
@@ -145,5 +148,14 @@ body {
     height: 0.05em;
     background-color: black;
     border-color: black;
+}
+
+.xtag {
+  text-align: center;
+}
+
+.xtag > * {
+  display: inline-block;
+  width: 200px;
 }
 
