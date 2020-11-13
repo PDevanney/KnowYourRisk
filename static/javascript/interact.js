@@ -15,11 +15,13 @@ interact('.draggable')
     // keep the element within the area of it's parent
     modifiers: [
       interact.modifiers.restrictRect({
-        endOnly: true
-      })
+        endOnly: true,
+          restriction: '.dropper-wrapper'
+      },
+      )
     ],
     // enable autoScroll
-    autoScroll: true,
+    autoScroll: false,
 
     listeners: {
       // call this function on every dragmove event
@@ -30,7 +32,6 @@ interact('.draggable')
         
       }
     }
-
   })
 
 function dragMoveListener (event) {
@@ -68,13 +69,13 @@ interact('.dropzone').dropzone({
     ondragenter: function (event) {
       var draggableElement = event.relatedTarget
       var dropzoneElement = event.target
-  
+        colorID = dropzoneElement.id
+        draggableElement.classList.add(String(colorID))
       // feedback the possibility of a drop
       dropzoneElement.classList.add('drop-target')
       draggableElement.classList.add('can-drop')
 
-      colorID = dropzoneElement.id
-      draggableElement.classList.add(String(colorID))
+
     },
     ondragleave: function (event) {
       // remove the drop feedback style
@@ -97,11 +98,12 @@ interact('.dropzone').dropzone({
       inertia: true,
       modifiers: [
         interact.modifiers.restrictRect({
-          endOnly: true
+          endOnly: true,
+            restriction: '.dropper-wrapper'
         })
       ],
-      autoScroll: true,
+      autoScroll: false,
       // dragMoveListener from the dragging demo above
       listeners: { move: dragMoveListener }
     })
-  
+

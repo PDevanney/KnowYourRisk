@@ -48,7 +48,6 @@ body {
 
   .fakedropzone {
     background-color: white;
-    border: dashed 4px transparent;
     border-radius: 15px;
     height: 500px;
     margin: auto ;
@@ -58,21 +57,22 @@ body {
     display: inline-block;
   }
   .dropzone {
-    background-color: #bfe4ff;
-    border-radius: 15px;
-    height: 500px;
-    margin: auto ;
-    padding: 10px;
-    width: 100%;
-    transition: background-color 0.3s;
-    display: inline-block;
+
   }
 
   .dropzone.smallerbox {
+      background-color: #bfe4ff;
+      border-radius: 15px;
+      height: 500px;
+      margin: auto ;
+      padding: 10px;
+      width: 100%;
+      transition: background-color 0.3s;
+      display: inline-block;
     background-color: #bfe4ff;
     border-radius: 0px;
     height: 100%;
-    width: 10%;
+    width: 5%;
     transition: background-color 0.3s;
     padding: 0px;
   }
@@ -120,47 +120,93 @@ body {
     width: 3.75em;
     line-height: 3.25em;
   }
-
+.drag-drop.can-drop.dropzoneContainer {
+    color: black;
+    background-color: lightblue;
+    height: 3.75em;
+    width: 3.75em;
+    line-height: 3.25em;
+}
   .drag-drop.can-drop.one {
     color: black;
     background-color: #008000;
   }
   .drag-drop.can-drop.two {
     color: black;
-    background-color: #4fa100;
+    background-color: #2d8e00;
   }
   .drag-drop.can-drop.three {
     color: black;
-    background-color: #87c100;
+    background-color: #499d00;
   }
   .drag-drop.can-drop.four {
       color: black;
-    background-color: #c1e000;
+    background-color: #62ab00;
   }
   .drag-drop.can-drop.five {
       color: black;
-    background-color: #ffff00;
+    background-color: #7bba00;
   }
   .drag-drop.can-drop.six {
       color: black;
-    background-color: #ffda00;
+    background-color: #94c800;
   }
   .drag-drop.can-drop.seven {
       color: black;
-    background-color: #ffb300;
+    background-color: #add600;
   }
 .drag-drop.can-drop.eight {
     color: black;
-    background-color: #ff8a00;
+    background-color: #c8e400;
   }
   .drag-drop.can-drop.nine {
       color: black;
-    background-color: #ff5b00;
+    background-color: #e3f200;
  }
   .drag-drop.can-drop.ten {
       color: black;
-    background-color: #ff0000;
+    background-color: #ffff00;
   }
+  .drag-drop.can-drop.eleven {
+       color: black;
+       background-color: #ffed00;
+  }
+.drag-drop.can-drop.twelve {
+    color: black;
+    background-color: #ffda00;
+}
+.drag-drop.can-drop.thirteen {
+    color: black;
+    background-color: #ffc700;
+}
+.drag-drop.can-drop.fourteen {
+    color: black;
+    background-color: #ffb300;
+}
+.drag-drop.can-drop.fifteen {
+    color: black;
+    background-color: #ff9f00;
+}
+.drag-drop.can-drop.sixteen {
+    color: black;
+    background-color: #ff8a00;
+}
+.drag-drop.can-drop.seventeen {
+    color: black;
+    background-color: #ff7300;
+}
+.drag-drop.can-drop.eighteen {
+    color: black;
+    background-color: #ff5b00;
+}
+.drag-drop.can-drop.nineteen {
+    color: black;
+    background-color: #ff3d00;
+}
+.drag-drop.can-drop.twenty {
+    color: black;
+    background-color: #ff0000;
+}
 
   #xline {
     position: relative;
@@ -186,17 +232,43 @@ body {
 }
 
 .top-buffer {
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-  width: 80%;
+  margin-top: 15%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom: 55%;
+  width:80%;
 }
 
 .axis-buffer {
   margin-top: 1.25%;
 }
 
+.dropper-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    height:68%;
+    width:80%;
+    position:absolute;
+}
+
 .compare-button {
 
 }
+/**.bottom-buffer {
+    margin-top: -9%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    width:80%;
+}
+.fakebottomdropzone {
+    background-color: trasnparent;
+    border: dashed 4px transparent;
+    border-radius: 15px;
+    height: 500px;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+    display: inline-block;*/
