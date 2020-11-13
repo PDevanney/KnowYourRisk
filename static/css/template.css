@@ -115,7 +115,6 @@ body {
 
   
   .drag-drop.can-drop {
-    color: #000;
     background-color: lightblue;
     height: 3.75em;
     width: 3.75em;
@@ -126,12 +125,15 @@ body {
     background-color: green;
   }
   .drag-drop.can-drop.low {
+    color: black;
     background-color: greenyellow;
   }
   .drag-drop.can-drop.medium {
+    color: black;
     background-color: yellow;
   }
   .drag-drop.can-drop.high {
+    color: black;
     background-color: orange;
   }
   .drag-drop.can-drop.highest {
