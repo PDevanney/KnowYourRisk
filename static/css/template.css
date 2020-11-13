@@ -170,13 +170,12 @@ body {
   #xline {
     position: relative;
     left: 0;
-    top: 70%;
+    top: 5%;
     width: 100%;
     margin: 0;
     height: 0.25em;
     background-color: black;
     border-color: black;
-    margin-top: 22.5%;
     background: linear-gradient(to right, green, yellow, red);
     margin-left: 1.25%;
     margin-right: 1.25%;
