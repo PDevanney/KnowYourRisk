@@ -74,33 +74,16 @@ body {
     border-radius: 0px;
     height: 100%;
     width: 20%;
-    transition: background-color 0.3s;
-    display: -webkit-flex;
-    border-radius: 0px;
-    padding: none;
+    transition: background-color 0.3s; 
+    padding: 0px;
   }
 
+  
   .drop-active {
     border-color: black;
   }
   
-  .drop-target.low-risk {
-    background-color: rgb(89, 218, 4);
-    border-color: #fff;
-    border-style: solid;
-  }
-
-  .drop-target.medium-risk {
-    background-color: rgb(255, 123, 0);
-    border-color: #fff;
-    border-style: solid;
-  }
-
-  .drop-target.high-risk {
-    background-color: rgb(255, 0, 0);
-    border-color: #fff;
-    border-style: solid;
-  }
+  
 
   .drop-target.line {
     background-color: lightblue;
@@ -108,7 +91,6 @@ body {
     border-style: solid;
   }
 
-  
   
   .drag-drop {
     top: 2.5em;
@@ -140,32 +122,21 @@ body {
     width: 3.75em;
     line-height: 3.25em;
   }
-  .low-risk {
-    color: #000;
-    background-color:lightgreen;
+  
+  .drag-drop.can-drop.lowest {
+    background-color: green;
   }
-  .medium-risk {
-    color: #000;
-    background-color:orange;
+  .drag-drop.can-drop.low {
+    background-color: greenyellow;
   }
-  .high-risk {
-    color: #000;
-    background-color:orangered;
+  .drag-drop.can-drop.medium {
+    background-color: yellow;
   }
-
-  .buckets {
-
-    display: grid;
-    grid-auto-flow: column;
-    gap: 7em;
-    align-items: center;
-    justify-items: center;
-
-    /*
-    padding: 5em;
-    padding-left: 20em;
-    padding-right: 20em;
-    */
+  .drag-drop.can-drop.high {
+    background-color: orange;
+  }
+  .drag-drop.can-drop.highest {
+    background-color: red;
   }
 
   #xline {
