@@ -1,176 +1,200 @@
-
-
 body {
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
-    color:black;
-    font: italic normal 1.4em georgia, sans-serif;
-    text-align: center;
-    
-  }
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  color:black;
+  font: italic normal 1.4em georgia, sans-serif;
+  text-align: center;
 
-  ul.menu {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-  }
+}
 
-  .title-box {
-    display: inline-block;
-    justify-content: center;
-    max-width: 20em;
-    padding: 2em 0.5em;
-    margin: 1rem 0 0 1rem;
-  
-    color: #fff;
-    background-color: grey;
-    border: solid 2px #fff;
+ul.menu {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
 
-  }
- 
-  .break {
-    display: block;
-    opacity: 0;
-  }
-  
+.title-box {
+  display: inline-block;
+  justify-content: center;
+  max-width: 20em;
+  padding: 2em 0.5em;
+  margin: 1rem 0 0 1rem;
 
-  #outer-dropzone {
-    height: 140px;
-  }
-  
-  #inner-dropzone {
-    height: 100px;
-  }
+  color: #fff;
+  background-color: grey;
+  border: solid 2px #fff;
 
-  .drop-height {
-    height: 40%
-  }
-  
-  .fakedropzone {
-    background-color: white;
-    border: dashed 4px transparent;
-    border-radius: 15px;
-    height: 500px;
-    margin: auto ;
-    padding: 10px;
-    width: 100%;
-    transition: background-color 0.3s;
-    display: inline-block;
-  }
-  .dropzone {
-    background-color: #bfe4ff;
-    border-radius: 15px;
-    height: 500px;
-    margin: auto ;
-    padding: 10px;
-    width: 100%;
-    transition: background-color 0.3s;
-    display: inline-block;
-  }
-  
-  .dropzone.smallerbox {
-    background-color: #bfe4ff;
-    border-radius: 0px;
-    height: 100%;
-    width: 10%;
-    transition: background-color 0.3s; 
-    padding: 0px;
-  }
+}
 
-  
-  .drop-active {
-    border-color: black;
-  }
-  
-  
-
-  .drop-target.line {
-    background-color: lightblue;
-    border-color: #fff;
-    border-style: solid;
-  }
-
-  
-  .drag-drop {
-    top: 2.5em;
-    border-radius: 50%;
-    display: inline-block;
-    height: 7.5em;
-    width: 7.5em;
-    line-height: 7.5em;
-    
-    
-    position: relative;
-    color: #fff;
-    background-color: #29e;
-    border: solid 2px black;
-    
-    touch-action: none;
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  
-    transition: background-color 0.3s;
-  }
+.break {
+  display: block;
+  opacity: 0;
+}
 
 
-  
-  .drag-drop.can-drop {
-    background-color: lightblue;
-    height: 3.75em;
-    width: 3.75em;
-    line-height: 3.25em;
-  }
-  
-  .drag-drop.can-drop.lowest {
-    background-color: green;
-  }
-  .drag-drop.can-drop.low {
+#outer-dropzone {
+  height: 140px;
+}
+
+#inner-dropzone {
+  height: 100px;
+}
+
+.drop-height {
+  height: 40%
+}
+
+.fakedropzone {
+  background-color: white;
+  border: dashed 4px transparent;
+  border-radius: 15px;
+  height: 500px;
+  margin: auto ;
+  padding: 10px;
+  width: 100%;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+.dropzone {
+  background-color: #bfe4ff;
+  border-radius: 15px;
+  height: 500px;
+  margin: auto ;
+  padding: 10px;
+  width: 100%;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.dropzone.smallerbox {
+  background-color: #bfe4ff;
+  border-radius: 0px;
+  height: 100%;
+  width: 10%;
+  transition: background-color 0.3s;
+  padding: 0px;
+}
+
+
+.drop-active {
+  border-color: black;
+}
+
+
+
+.drop-target.line {
+  background-color: lightblue;
+  border-color: #fff;
+  border-style: solid;
+}
+
+
+.drag-drop {
+  top: 2.5em;
+  border-radius: 50%;
+  display: inline-block;
+  height: 7.5em;
+  width: 7.5em;
+  line-height: 7.5em;
+
+
+  position: relative;
+  color: #fff;
+  background-color: #29e;
+  border: solid 2px black;
+
+  touch-action: none;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+}
+
+
+
+.drag-drop.can-drop {
+  background-color: lightblue;
+  height: 3.75em;
+  width: 3.75em;
+  line-height: 3.25em;
+}
+
+.drag-drop.can-drop.one {
+  color: black;
+  background-color: #008000;
+}
+.drag-drop.can-drop.two {
+  color: black;
+  background-color: #4fa100;
+}
+.drag-drop.can-drop.three {
+  color: black;
+  background-color: #87c100;
+}
+.drag-drop.can-drop.four {
     color: black;
-    background-color: greenyellow;
-  }
-  .drag-drop.can-drop.medium {
+  background-color: #c1e000;
+}
+.drag-drop.can-drop.five {
     color: black;
-    background-color: yellow;
-  }
-  .drag-drop.can-drop.high {
+  background-color: #ffff00;
+}
+.drag-drop.can-drop.six {
     color: black;
-    background-color: orange;
-  }
-  .drag-drop.can-drop.highest {
-    background-color: red;
-  }
+  background-color: #ffda00;
+}
+.drag-drop.can-drop.seven {
+    color: black;
+  background-color: #ffb300;
+}
+.drag-drop.can-drop.eight {
+  color: black;
+  background-color: #ff8a00;
+}
+.drag-drop.can-drop.nine {
+    color: black;
+  background-color: #ff5b00;
+}
+.drag-drop.can-drop.ten {
+    color: black;
+  background-color: #ff0000;
+}
 
-  #xline {
-    position: relative;
-    left: 0;
-    top: 5%;
-    width: 100%;
-    margin: 0;
-    height: 0.25em;
-    background-color: black;
-    border-color: black;
-    background: linear-gradient(to right, #008000, #ffff00, #ff0000);
- 
+#xline {
+  position: relative;
+  left: 0;
+  top: 5%;
+  width: 100%;
+  margin: 0;
+  height: 0.25em;
+  background-color: black;
+  border-color: black;
+  background: linear-gradient(to right, green, yellow, red);
+  margin-left: 1.25%;
+  margin-right: 1.25%;
 }
 
 .xtag {
-  text-align: center;
+text-align: center;
 }
 
 .xtag > * {
-  display: inline-block;
-  width: 200px;
+display: inline-block;
+width: 200px;
 }
 
-.top-buffer { 
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-  width: 80%;
+.top-buffer {
+margin-top: 5%;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 5%;
+width: 80%;
 }
 
 .axis-buffer {
-  margin-top: 1.25%;
+margin-top: 1.25%;
 }
 
+.compare-button {
+
+}
