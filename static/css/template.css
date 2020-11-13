@@ -75,8 +75,9 @@ body {
     height: 100%;
     width: 20%;
     transition: background-color 0.3s;
-    display: -webkit-flex; 
-    padding: 0px;
+    display: -webkit-flex;
+    border-radius: 0px;
+    padding: none;
   }
 
   .drop-active {
