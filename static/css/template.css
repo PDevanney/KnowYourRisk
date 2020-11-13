@@ -71,10 +71,11 @@ body {
   
   .dropzone.smallerbox {
     background-color: #bfe4ff;
-    border: dashed 4px black;
+    border-radius: 0px;
     height: 100%;
     width: 20%;
     transition: background-color 0.3s;
+    display: -webkit-flex; 
     padding: 0px;
   }
 
