@@ -1,5 +1,10 @@
 
-
+function moreinfo(x) {
+  document.getElementById('mytextarea').innerHTML = x;
+}
+function normalinfo(x) {
+  document.getElementById('mytextarea').innerHTML = "";
+}
 /* The dragging code for '.draggable' from the demo above
  * applies to this demo as well so it doesn't have to be repeated. */
 // target elements with the "draggable" class
@@ -25,6 +30,7 @@ interact('.draggable')
         
       }
     }
+
   })
 
 function dragMoveListener (event) {

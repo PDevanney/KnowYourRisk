@@ -10,25 +10,26 @@
     {% extends "template.html" %}
     {% block content %}
 
-    <div class="jumbotron text-center">
+    <nav class="navbar navbar-light bg-light">
       <h1>How Risky are these Activities?</h1>
       <p>Hover over each one blah blah blah</p>
-    </div>
+    </nav>
     
     <div class="container">
       <div class="row" style="height: 7.5em">
         <div class="col">
-          <div id="yes-drop" class="drag-drop"> Gym</div>
+          <div id="yes-drop" class="drag-drop" onmouseover="moreinfo('Training at the Gym and sharing equipment with other members. There is no guarantee everything has been wiped down properly')" onmouseout="normalinfo(this)"> Gym</div>
         </div>
         <div class="col">
-          <div id="yes-drop" class="drag-drop"> Walk</div>
+          <div id="yes-drop" class="drag-drop" onmouseover="moreinfo('Going for a walk in a city centre but avoiding busy spaces')" onmouseout="normalinfo(this)"> Walk</div>
         </div>
         <div class="col">
-          <div id="yes-drop" class="drag-drop"> Church</div>
+          <div id="yes-drop" class="drag-drop" onmouseover="moreinfo('Attending church with multiple households and singing hymns')" onmouseout="normalinfo(this)"> Church</div>
         </div>
         <div class="col">
-          <div id="yes-drop" class="drag-drop"> Visit</div>
+          <div id="yes-drop" class="drag-drop" onmouseover="moreinfo('Visiting another household with no social distancing')" onmouseout="normalinfo(this)"> Visit</div>
         </div>
+        <div id="mytextarea" class="col"></div>
       </div>  
     </div>
     <div class="top-buffer">
