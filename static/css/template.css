@@ -46,6 +46,17 @@ body {
     height: 40%
   }
   
+  .fakedropzone {
+    background-color: white;
+    border: dashed 4px transparent;
+    border-radius: 15px;
+    height: 500px;
+    margin: auto ;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+    display: inline-block;
+  }
   .dropzone {
     background-color: #bfe4ff;
     border: dashed 4px transparent;
@@ -58,8 +69,13 @@ body {
     display: inline-block;
   }
   
-  .dropzone.line {
-    width: 100%;
+  .dropzone.smallerbox {
+    background-color: #bfe4ff;
+    border: dashed 4px black;
+    height: 100%;
+    width: 20%;
+    transition: background-color 0.3s;
+    padding: 0px;
   }
 
   .drop-active {

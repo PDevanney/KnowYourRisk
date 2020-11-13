@@ -16,7 +16,7 @@
     </div>
     
     <div class="container">
-      <div class="row">
+      <div class="row" style="height: 7.5em">
         <div class="col">
           <div id="yes-drop" class="drag-drop"> Gym</div>
         </div>
@@ -32,12 +32,17 @@
       </div>  
     </div>
     <div class="top-buffer">
-      <div class="dropzone">
+      <div class="fakedropzone">
         <div class ="row">
           <div class="col">
             <h3>Risk scale</h3>
           </div>
         </div>
+        <div class="dropzone smallerbox"></div>
+        <div class="dropzone smallerbox"></div>
+        <div class="dropzone smallerbox"></div>
+        <div class="dropzone smallerbox"></div>
+        <div class="dropzone smallerbox"></div>
         <div class="row">
           <hr id="xline">
         </div>
@@ -51,15 +56,3 @@
     {% endblock %}
   </body>
 </html>
-
-<!--
-  <div class="dropzone line">
-          <p>Risk Scale</p>
-          <hr id="xline">
-            
-          <div class="xtag" style="text-align: center;">
-            <p>Low Risk</p>          
-            <p>High Risk</p>
-          </div>
-        </div>
--->
