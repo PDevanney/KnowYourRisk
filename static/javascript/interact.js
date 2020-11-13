@@ -72,13 +72,15 @@ interact('.dropzone').dropzone({
       // feedback the possibility of a drop
       dropzoneElement.classList.add('drop-target')
       draggableElement.classList.add('can-drop')
-      
+
+      colorID = dropzoneElement.id
+      draggableElement.classList.add(String(colorID))
     },
     ondragleave: function (event) {
       // remove the drop feedback style
       event.target.classList.remove('drop-target')
       event.relatedTarget.classList.remove('can-drop')
-      
+      event.relatedTarget.classList.remove(String(colorID))
     },
     ondrop: function (event) {
       
