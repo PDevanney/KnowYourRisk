@@ -16,7 +16,7 @@ interact('.draggable')
     modifiers: [
       interact.modifiers.restrictRect({
         endOnly: true,
-          restriction: '.dropper-wrapper'
+          // restriction: '.dropper-wrapper'
       },
       )
     ],
@@ -99,7 +99,7 @@ interact('.dropzone').dropzone({
       modifiers: [
         interact.modifiers.restrictRect({
           endOnly: true,
-            restriction: '.dropper-wrapper'
+            // restriction: '.dropper-wrapper'
         })
       ],
       autoScroll: false,

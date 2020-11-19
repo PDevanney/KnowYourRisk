@@ -6,6 +6,7 @@
 </head>
 <header>
 </header>
+
 <body>
 {% extends "template.html" %}
 {% block content %}
@@ -14,7 +15,6 @@
     <h1>How Risky are these Activities?</h1>
     <p>Hover over each one blah blah blah</p>
 </nav>
-
 
 <div class="dropper-wrapper">
     <div class="container">
@@ -63,26 +63,62 @@
                 </div>
             </div>
             <div id="dropzoneContainer" style="height:75%" class="row dropzone">
-                <div id="one" class="dropzone smallerbox"></div>
+                <div id="one" class="dropzone smallerbox">
+                    <div class="medical-square one">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Mail</p>
+                    </div>
+                </div>
                 <div id="two" class="dropzone smallerbox"></div>
                 <div id="three" class="dropzone smallerbox"></div>
-                <div id="four" class="dropzone smallerbox"></div>
-                <div id="five" class="dropzone smallerbox"></div>
+                <div id="four" class="dropzone smallerbox">
+                    <div class="medical-square four">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Camping</p>
+                    </div>
+                </div>
+                <div id="five" class="dropzone smallerbox">
+                    <div class="medical-square five">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Eat Out</p>
+                    </div>
+                </div>
                 <div id="six" class="dropzone smallerbox"></div>
                 <div id="seven" class="dropzone smallerbox"></div>
-                <div id="eight" class="dropzone smallerbox"></div>
+                <div id="eight" class="dropzone smallerbox">
+                    <div class="medical-square eight">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Library</p>
+                    </div>
+                </div>
                 <div id="nine" class="dropzone smallerbox"></div>
-                <div id="ten" class="dropzone smallerbox"></div>
+                <div id="ten" class="dropzone smallerbox">
+                    <div class="medical-square ten">
+                        <p style="position: relative; top: 25%; font-size: 70%;">Shopping Trip</p>
+                    </div>
+                </div>
                 <div id="eleven" class="dropzone smallerbox"></div>
                 <div id="twelve" class="dropzone smallerbox"></div>
                 <div id="thirteen" class="dropzone smallerbox"></div>
-                <div id="fourteen" class="dropzone smallerbox"></div>
+                <div id="fourteen" class="dropzone smallerbox">
+                    <div class="medical-square fourteen">
+                        <p style="position: relative; top: 25%; font-size: 70%;">Shaking Hand</p>
+                    </div>
+                </div>
                 <div id="fifteen" class="dropzone smallerbox"></div>
-                <div id="sixteen" class="dropzone smallerbox"></div>
+                <div id="sixteen" class="dropzone smallerbox">
+                    <div class="medical-square sixteen">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Gym</p>
+                    </div>
+                </div>
                 <div id="seventeen" class="dropzone smallerbox"></div>
-                <div id="eighteen" class="dropzone smallerbox"></div>
+                <div id="eighteen" class="dropzone smallerbox">
+                    <div class="medical-square eighteen">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Bar/Pub</p>
+                    </div>
+                </div>
                 <div id="nineteen" class="dropzone smallerbox"></div>
-                <div id="twenty" class="dropzone smallerbox"></div>
+                <div id="twenty" class="dropzone smallerbox">
+                    <div class="medical-square twenty">
+                        <p style="position: relative; top: 25%; font-size: 70%;">Sports Event</p>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <hr id="xline">
@@ -96,18 +132,7 @@
     </div>
 </div>
 
-<!--<div class="bottom-buffer">
-    <div class="fakebottomdropzone">
-        <div class="row">
-            <hr id="xline">
-        </div>
-        <div class="row axis-buffer">
-            <div class="col-md-2">Low Risk</div>
-            <div class="col-md-2 ml-auto">Medium Risk</div>
-            <div class="col-md-2 ml-auto">High Risk</div>
-        </div>
-    </div>
-</div>-->
 {% endblock %}
+
 </body>
 </html>
