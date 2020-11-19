@@ -93,14 +93,10 @@ body {
 
 
   .drag-drop {
-    top: 2.5em;
     border-radius: 50%;
     display: inline-block;
     height: 7.5em;
     width: 7.5em;
-    line-height: 7.5em;
-
-
     position: absolute;
     color: #fff;
     background-color: #29e;
@@ -118,15 +114,18 @@ body {
   .drag-drop.can-drop {
     background-color: lightblue;
     height: 3.75em;
-    width: 3.75em;
-    line-height: 3.25em;
+    width: 3.75em;    
+  }
+
+  .drag-drop.can-drop p{
+    font-size: 70%;
   }
 .drag-drop.can-drop.dropzoneContainer {
     color: black;
     background-color: lightblue;
     height: 3.75em;
     width: 3.75em;
-    line-height: 3.25em;
+    
 }
   .drag-drop.can-drop.one {
     color: black;
@@ -259,6 +258,7 @@ body {
   border: solid 2px black;
   text-align: center;
   vertical-align: middle;
+  opacity: 0;
 }
 
 .one {

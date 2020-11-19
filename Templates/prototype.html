@@ -17,40 +17,40 @@
 
 
 
-<div id="yes-drop" class="drag-drop">
-        Gym
+<div id="gym" class="drag-drop" onmouseover="hoverHighlight('gym', '1')" onmouseout="hoverHighlight('gym', '0.5')">
+    <p style="position: relative; top: 40%;">Gym</p>
 </div>
 
 <div id="yes-drop" class="drag-drop"> 
-    Mail
+    <p style="position: relative; top: 40%;">Mail</p>
 </div>
 
 <div id="yes-drop" class="drag-drop">
-    Camping
+    <p style="position: relative; top: 40%;">Camping</p>
 </div>
 
 <div id="yes-drop" class="drag-drop">
-    Eat Out
+    <p style="position: relative; top: 40%;">Eat Out</p>
 </div>
 
 <div id="yes-drop" class="drag-drop">
-    Library
+    <p style="position: relative; top: 40%;">Library</p>
 </div>
 
 <div id="yes-drop" class="drag-drop">
-    Shopping Trip
+    <p style="position: relative; top: 40%;">Shopping Trip</p>
 </div>
 
 <div id="yes-drop" class="drag-drop">
-    Shaking Hand
+    <p style="position: relative; top: 40%;">Shaking Hand</p>
 </div>
 
 <div id="yes-drop" class="drag-drop">
-    Bar/Pub
+    <p style="position: relative; top: 40%;">Bar/Pub</p>
 </div>
 
 <div id="yes-drop" class="drag-drop">
-    Sports Event
+    <p style="position: relative; top: 40%;">Sports Event</p>
 </div>
 
 <div id="mytextarea">
@@ -66,7 +66,7 @@
                     <h3>Risk scale</h3>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-info compare-button" style="float:right">Compare Answers
+                    <button type="button" class="btn btn-info compare-button" style="float:right" onclick="Compare()">Compare Answers
                     </button>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div id="fifteen" class="dropzone smallerbox"></div>
                 <div id="sixteen" class="dropzone smallerbox">
-                    <div class="medical-square sixteen">
+                    <div id="gym-medical" class="medical-square sixteen">
                         <p style="position: relative; top: 35%; font-size: 70%;">Gym</p>
                     </div>
                 </div>

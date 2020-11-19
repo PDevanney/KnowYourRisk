@@ -1,10 +1,27 @@
 
 function moreinfo(x) {
-  document.getElementById('mytextarea').innerHTML = x;
+  document.getElementsByClassName('mytextarea').innerHTML = x;
 }
-function normalinfo(x) {
-  document.getElementById('mytextarea').innerHTML = "";
+
+
+function hoverHighlight(x,y) {
+  if (document.getElementById(x).classList.contains('hover-highlight')) {
+    document.getElementById(x).style.opacity = y
+    if (y == 0.5) {
+      y = 0
+    }
+    document.getElementById(x + "-medical").style.opacity = y
+  }
+  
 }
+function Compare() {
+  var list = document.getElementsByClassName("drag-drop");
+  for (var x = 0; x < list.length; x++) {
+    list[x].style.opacity = "0.5"
+    list[x].classList.add('hover-highlight')
+  }
+}
+
 /* The dragging code for '.draggable' from the demo above
  * applies to this demo as well so it doesn't have to be repeated. */
 // target elements with the "draggable" class
@@ -56,7 +73,7 @@ window.dragMoveListener = dragMoveListener
 // enable draggables to be dropped into this
 interact('.dropzone').dropzone({
     // only accept elements matching this CSS selector
-    accept: '#yes-drop',
+    accept: '.drag-drop',
     // Require a 75% element overlap for a drop to be possible
     overlap: 0.5,
   
