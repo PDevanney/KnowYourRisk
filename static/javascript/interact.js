@@ -19,37 +19,9 @@ function Compare() {
   for (var x = 0; x < list.length; x++) {
     list[x].style.opacity = "0.5"
     list[x].classList.add('hover-highlight')
+    list[x].classList.remove('draggable')
   }
 }
-
-/* The dragging code for '.draggable' from the demo above
- * applies to this demo as well so it doesn't have to be repeated. */
-// target elements with the "draggable" class
-interact('.draggable')
-  .draggable({
-    // enable inertial throwing
-    inertia: true,
-    // keep the element within the area of it's parent
-    modifiers: [
-      interact.modifiers.restrictRect({
-        endOnly: true,
-          // restriction: '.dropper-wrapper'
-      },
-      )
-    ],
-    // enable autoScroll
-    autoScroll: false,
-
-    listeners: {
-      // call this function on every dragmove event
-      move: dragMoveListener,
-
-      // call this function on every dragend event
-      end (event) {
-        
-      }
-    }
-  })
 
 function dragMoveListener (event) {
   var target = event.target
@@ -110,7 +82,7 @@ interact('.dropzone').dropzone({
     }
   })
   
-  interact('.drag-drop')
+  interact('.draggable')
     .draggable({
       inertia: true,
       modifiers: [
