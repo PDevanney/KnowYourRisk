@@ -1,22 +1,27 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>Flask Tutorial</title>
-</head>
-<header>
-</header>
-<body>
 {% extends "template.html" %}
 {% block content %}
 
-<nav class="navbar navbar-light bg-light">
-    <h1>How Risky are these Activities?</h1>
-    <p>Hover over each one blah blah blah</p>
-</nav>
+<section id="banner">
+    <div class="inner">
+        <h2>Ball Dropper</h2>
+        <p>Description of how it Works 1</p>
+        <p>Description of how it Works 2</p>
+        <p>Description of how it Works 3</p>
+        <p>Description of how it Works 4</p>
+
+        <ul class="actions">
+            <li><a href="#content" class="button big special">Sign Up</a></li>
+            <li><a href="#elements" class="button big alt">Learn More</a></li>
+        </ul>
+
+        <li><a href="#elements" class="button big alt">Learn More</a></li>
+        <li><a href="/#about-section" class="smoothscroll arrow-down"><span class="icon-arrow_downward"></span></a></li>
+
+    </div>
+</section>
 
 
-<div class="dropper-wrapper">
+<div id="about-section" class="dropper-wrapper">
     <div class="container">
         <div class="row" style="height: 7.5em">
             <div class="col">
@@ -95,19 +100,4 @@
         </div>
     </div>
 </div>
-
-<!--<div class="bottom-buffer">
-    <div class="fakebottomdropzone">
-        <div class="row">
-            <hr id="xline">
-        </div>
-        <div class="row axis-buffer">
-            <div class="col-md-2">Low Risk</div>
-            <div class="col-md-2 ml-auto">Medium Risk</div>
-            <div class="col-md-2 ml-auto">High Risk</div>
-        </div>
-    </div>
-</div>-->
 {% endblock %}
-</body>
-</html>
