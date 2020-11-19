@@ -1,21 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>Flask Tutorial</title>
-</head>
-<header>
-</header>
-
-<body>
 {% extends "template.html" %}
 {% block content %}
 
-<nav class="navbar navbar-light bg-light">
-    <h1>How Risky are these Activities?</h1>
-</nav>
+<section id="banner">
+    <div class="inner">
+        <h2>Ball Dropper</h2>
+        <p>Description of how it Works 1</p>
+        <p>Description of how it Works 2</p>
+        <p>Description of how it Works 3</p>
+        <p>Description of how it Works 4</p>
 
-
+        <ul class="actions">
+            <li><a href="#content" class="button big special">Sign Up</a></li>
+            <li><a href="#elements" class="button big alt">Learn More</a></li>
+        </ul>
+    <div>
+</section>
 
 <div id="gym" class="draggable drag-drop" onmouseover="hoverHighlight('gym', '1')" onmouseout="hoverHighlight('gym', '0.5')">
     <p style="position: relative; top: 40%;">Gym</p>
@@ -139,14 +138,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
-
-</body>
-</html>
-
-<!--
-    onmouseover="moreinfo('Training at the Gym and sharing equipment with other members. There is no guarantee everything has been wiped down properly')"
-                     onmouseout="normalinfo(this)"> Gym
-                    
-    -->
