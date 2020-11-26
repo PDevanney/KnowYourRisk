@@ -22,6 +22,8 @@ function hoverHighlight(x,y) {
   
 }
 function CompareMedical() {
+    document.getElementById("compareOtherButton").style.opacity="0.5"
+    document.getElementById("compareMedicalButton").style.opacity="1"
   var list = document.getElementsByClassName("drag-drop");
   for (var x = 0; x < list.length; x++) {
     list[x].style.opacity = "0.5"
@@ -31,6 +33,8 @@ function CompareMedical() {
   }
 }
 function CompareOthers() {
+    document.getElementById("compareOtherButton").style.opacity="1"
+    document.getElementById("compareMedicalButton").style.opacity="0.5"
     var list = document.getElementsByClassName("drag-drop");
     for (var x = 0; x < list.length; x++) {
         list[x].style.opacity = "0.5"
