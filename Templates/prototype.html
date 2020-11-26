@@ -15,7 +15,8 @@
         </ul>
     <div>
 </section>
-
+<div class="ball-buffer">
+</div>
 <div id="gym" class="draggable drag-drop" onmouseover="hoverHighlight('gym', '1')" onmouseout="hoverHighlight('gym', '0.5')">
     <p style="position: relative; top: 40%;">Gym</p>
 </div>
@@ -60,23 +61,38 @@
     <div class="top-buffer">
         <div class="fakedropzone">
             <div class="row">
-                <div class="col"></div>
                 <div class="col">
-                    <h3>Risk scale</h3>
+                    <div class="col">
+                        <button type="button" class="btn btn-info compare-button" style="float:left; margin-left:-80px; font-size: 30px;" onclick="CompareOthers()">Compare with others
+                        </button>
+                    </div>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-info compare-button" style="float:right" onclick="Compare()">Compare Answers
+                    <h3 style="font-size: 30px;">Risk scale</h3>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-info compare-button" style="float:right; font-size: 30px; margin-right: -10px;" onclick="CompareMedical()">Compare with Medical
                     </button>
                 </div>
             </div>
-            <div id="dropzoneContainer" style="height:75%" class="row dropzone">
+            <div id="dropzoneContainer" style="height:75%; margin-top: -10px;" class="row dropzone">
                 <div id="one" class="dropzone smallerbox">
                     <div id = "mail-medical" class="medical-square one">
                         <p style="position: relative; top: 35%; font-size: 70%;">Mail</p>
                     </div>
+
                 </div>
-                <div id="two" class="dropzone smallerbox"></div>
-                <div id="three" class="dropzone smallerbox"></div>
+                <div id="two" class="dropzone smallerbox">
+                    <div id = "mail-average" class="average-square two">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Mail</p>
+                    </div>
+                </div>
+                <div id="three" class="dropzone smallerbox">
+                    <div id = "camping-average" class="average-square three">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Camping</p>
+                    </div>
+                </div>
                 <div id="four" class="dropzone smallerbox">
                     <div id = "camping-medical" class="medical-square four">
                         <p style="position: relative; top: 35%; font-size: 70%;">Camping</p>
@@ -87,34 +103,61 @@
                         <p style="position: relative; top: 35%; font-size: 70%;">Eat Out</p>
                     </div>
                 </div>
-                <div id="six" class="dropzone smallerbox"></div>
+                <div id="six" class="dropzone smallerbox">
+                    <div id = "library-average" class="average-square six">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Library</p>
+                    </div>
+                </div>
                 <div id="seven" class="dropzone smallerbox"></div>
                 <div id="eight" class="dropzone smallerbox">
                     <div id = "library-medical" class="medical-square eight">
                         <p style="position: relative; top: 35%; font-size: 70%;">Library</p>
                     </div>
                 </div>
-                <div id="nine" class="dropzone smallerbox"></div>
+                <div id="nine" class="dropzone smallerbox">
+                    <div id = "eat-out-average" class="average-square nine">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Eat Out</p>
+                    </div>
+                </div>
                 <div id="ten" class="dropzone smallerbox">
                     <div id = "shopping-trip-medical" class="medical-square ten">
                         <p style="position: relative; top: 25%; font-size: 70%;">Shopping Trip</p>
                     </div>
+                    <div style = "margin-top:-52px;" id = "gym-average" class="average-square ten">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Gym</p>
+                    </div>
                 </div>
-                <div id="eleven" class="dropzone smallerbox"></div>
+                <div id="eleven" class="dropzone smallerbox">
+                    <div id = "shopping-trip-average" class="average-square eleven">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Shopping Trip</p>
+                    </div>
+                </div>
                 <div id="twelve" class="dropzone smallerbox"></div>
-                <div id="thirteen" class="dropzone smallerbox"></div>
+                <div id="thirteen" class="dropzone smallerbox">
+                    <div id = "shaking-hand-average" class="average-square thirteen">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Shaking Hand</p>
+                    </div>
+                </div>
                 <div id="fourteen" class="dropzone smallerbox">
                     <div id = "shaking-hand-medical" class="medical-square fourteen">
                         <p style="position: relative; top: 25%; font-size: 70%;">Shaking Hand</p>
                     </div>
                 </div>
-                <div id="fifteen" class="dropzone smallerbox"></div>
+                <div id="fifteen" class="dropzone smallerbox">
+                    <div id = "bar-pub-average" class="average-square fifteen">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Bar/Pub</p>
+                    </div>
+                </div>
                 <div id="sixteen" class="dropzone smallerbox">
                     <div id="gym-medical" class="medical-square sixteen">
                         <p style="position: relative; top: 35%; font-size: 70%;">Gym</p>
                     </div>
                 </div>
-                <div id="seventeen" class="dropzone smallerbox"></div>
+                <div id="seventeen" class="dropzone smallerbox">
+                    <div id = "sports-event-average" class="average-square seventeen">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Sports Event</p>
+                    </div>
+                </div>
                 <div id="eighteen" class="dropzone smallerbox">
                     <div id = "bar-pub-medical" class="medical-square eighteen">
                         <p style="position: relative; top: 35%; font-size: 70%;">Bar/Pub</p>
@@ -131,9 +174,9 @@
                 <hr id="xline">
             </div>
             <div class="row axis-buffer">
-                <div class="col-md-2">Low Risk</div>
-                <div class="col-md-2 ml-auto">Medium Risk</div>
-                <div class="col-md-2 ml-auto">High Risk</div>
+                <div style = "font-size: 28px; margin-left:-50px;" class="col-md-2">Low Risk</div>
+                <div style = "font-size: 28px;" class="col-md-2 ml-auto">Medium Risk</div>
+                <div style = "font-size: 28px;" class="col-md-2 ml-auto">High Risk</div>
             </div>
         </div>
     </div>

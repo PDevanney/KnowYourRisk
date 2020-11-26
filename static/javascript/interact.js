@@ -5,22 +5,39 @@ function moreinfo(x) {
 
 
 function hoverHighlight(x,y) {
-  if (document.getElementById(x).classList.contains('hover-highlight')) {
+  if (document.getElementById(x).classList.contains('hover-Medical-highlight')) {
     document.getElementById(x).style.opacity = y
     if (y == 0.5) {
       y = 0
     }
     document.getElementById(x + "-medical").style.opacity = y
   }
+    if (document.getElementById(x).classList.contains('hover-Average-highlight')) {
+        document.getElementById(x).style.opacity = y
+        if (y == 0.5) {
+            y = 0
+        }
+        document.getElementById(x + "-average").style.opacity = y
+    }
   
 }
-function Compare() {
+function CompareMedical() {
   var list = document.getElementsByClassName("drag-drop");
   for (var x = 0; x < list.length; x++) {
     list[x].style.opacity = "0.5"
-    list[x].classList.add('hover-highlight')
+    list[x].classList.add('hover-Medical-highlight')
+      list[x].classList.remove('hover-Average-highlight')
     list[x].classList.remove('draggable')
   }
+}
+function CompareOthers() {
+    var list = document.getElementsByClassName("drag-drop");
+    for (var x = 0; x < list.length; x++) {
+        list[x].style.opacity = "0.5"
+        list[x].classList.add('hover-Average-highlight')
+        list[x].classList.remove('hover-Medical-highlight')
+        list[x].classList.remove('draggable')
+    }
 }
 
 function dragMoveListener (event) {
