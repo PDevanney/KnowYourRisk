@@ -25,9 +25,10 @@
 </section>
 
 <div id="graph">
-    
-</div>
 
+</div>
+<div id="activity-description"></div>
+<div id="risk-description"></div>
 <div id="gym" class="draggable drag-drop" onmouseover="hoverHighlight('gym', '1')" onmouseout="hoverHighlight('gym', '0.5')">
     <p style="position: relative; top: 40%;">Gym</p>
 </div>
@@ -63,11 +64,6 @@
 <div id="sports-event" class="draggable drag-drop" onmouseover="hoverHighlight('sports-event', '1')" onmouseout="hoverHighlight('sports-event', '0.5')">
     <p style="position: relative; top: 40%;">Sports Event</p>
 </div>
-
-<div id="mytextarea">
-</div>
-
-
 
     <div class="top-buffer">
         <div class="fakedropzone">
@@ -110,9 +106,7 @@
                     </div>
                 </div>
                 <div id="five" class="dropzone smallerbox">
-                    <div id = "eat-out-medical" class="medical-square five">
-                        <p style="position: relative; top: 35%; font-size: 70%;">Eat Out</p>
-                    </div>
+
                 </div>
                 <div id="six" class="dropzone smallerbox">
                     <div id = "library-average" class="average-square six">
@@ -126,7 +120,10 @@
                     </div>
                 </div>
                 <div id="nine" class="dropzone smallerbox">
-                    <div id = "eat-out-average" class="average-square nine">
+                    <div id = "eat-out-medical" class="medical-square five">
+                        <p style="position: relative; top: 35%; font-size: 70%;">Eat Out</p>
+                    </div>
+                    <div style = "margin-top:-52px;" id = "eat-out-average" class="average-square nine">
                         <p style="position: relative; top: 35%; font-size: 70%;">Eat Out</p>
                     </div>
                 </div>
