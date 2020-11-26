@@ -124,7 +124,8 @@ html {
   }
 
   .drag-drop.can-drop p{
-    font-size: 70%;
+    font-size: 77.5%;
+    line-height: normal;
   }
 .drag-drop.can-drop.dropzoneContainer {
     color: black;

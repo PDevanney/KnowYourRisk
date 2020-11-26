@@ -40,6 +40,18 @@ function moreinfo(x) {
   document.getElementById('activity-description').innerHTML = description_dict[x];
 }
 
+function unfade(element) {
+  var op = 0;  // initial opacity
+  element.style.display = 'block';
+  var timer = setInterval(function () {
+      if (op >= 1){
+          clearInterval(timer);
+      }
+      element.style.opacity = op;
+      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op += op * 0.1;
+  }, 10);
+}
 
 function hoverHighlight(x,y) {
     moreinfo(x)
@@ -66,6 +78,8 @@ function hoverHighlight(x,y) {
 
 }
 function CompareMedical() {
+    document.getElementById('activity-description').innerHTML = "";
+    document.getElementById('risk-description').innerHTML = "";
     document.getElementById("compareOtherButton").style.opacity="0.5"
     document.getElementById("compareMedicalButton").style.opacity="1"
   var list = document.getElementsByClassName("drag-drop");
@@ -77,6 +91,8 @@ function CompareMedical() {
   }
 }
 function CompareOthers() {
+    document.getElementById('activity-description').innerHTML = "";
+    document.getElementById('risk-description').innerHTML = "";
     document.getElementById("compareOtherButton").style.opacity="1"
     document.getElementById("compareMedicalButton").style.opacity="0.5"
     var list = document.getElementsByClassName("drag-drop");

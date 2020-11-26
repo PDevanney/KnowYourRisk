@@ -979,7 +979,7 @@
 	#banner {
 		background-color: #666666;
 		background-image: url("../images/banner.jpg");
-		background-size: cover;
+		background-size: auto;
 		background-position: center center;
 		background-repeat: no-repeat;
 		color: #d8d8d8;
