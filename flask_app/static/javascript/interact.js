@@ -1,3 +1,4 @@
+var ShowAlert = true;
 
 var description_dict = {
     'gym': "Training in a commercial gym facility.",
@@ -82,6 +83,12 @@ function CompareMedical() {
     document.getElementById('risk-description').innerHTML = "";
     document.getElementById("compareOtherButton").style.opacity="0.5"
     document.getElementById("compareMedicalButton").style.opacity="1"
+
+    if (ShowAlert){
+      swal("", "Hover over the Activities you want to Compare! \n\n Read the description  shown above for additional information.", "info");
+      ShowAlert = false;
+    }
+
   var list = document.getElementsByClassName("drag-drop");
   for (var x = 0; x < list.length; x++) {
     list[x].style.opacity = "0.5"
@@ -95,6 +102,12 @@ function CompareOthers() {
     document.getElementById('risk-description').innerHTML = "";
     document.getElementById("compareOtherButton").style.opacity="1"
     document.getElementById("compareMedicalButton").style.opacity="0.5"
+
+    if (ShowAlert){
+      swal("", "Hover over the Activities you want to Compare! \n\n Read the description shown above for additional information.", "info");
+      ShowAlert = false;
+    }
+
     var list = document.getElementsByClassName("drag-drop");
     for (var x = 0; x < list.length; x++) {
         list[x].style.opacity = "0.5"

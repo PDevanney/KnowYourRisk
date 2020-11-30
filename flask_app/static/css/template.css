@@ -382,40 +382,14 @@ html {
   color: black;
   background-color: #ff0000;
 }
-/* Arrow & Hover Animation */
-#more-arrows {
-    width: 75px;
-    height: 65px;
 
-&:hover {
-polygon {
-    fill: #FFF;
-    transition: all .2s ease-out;
-
-&.arrow-bottom {
-     transform: translateY(-18px);
- }
-
-&.arrow-top {
-     transform: translateY(18px);
- }
-
-}
-
-}
-
-}
-
-polygon {
-    fill: #FFF;
-    transition: all .2s ease-out;
-
-&.arrow-middle {
-     opacity: 0.75;
- }
-
-&.arrow-top {
-     opacity: 0.5
- }
-
+/* Alert Animation */
+.swal-text {
+  background-color: #FEFAE3;
+  padding: 17px;
+  border: 1px solid #F0E1A1;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #61534e;
 }
